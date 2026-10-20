@@ -2921,7 +2921,6 @@ combinedPanelDiv.innerHTML = `
                 'Municipal Police',
                 'Specialized Unit'
             ].map(c => `
-            ].map(c => `
             <label style="display:block;font-size:13px;margin-bottom:5px;">
                 <input type="checkbox" name="policeCategory" value="${c}">
                 ${c} (<span id="count-${c.replace(/[^a-zA-Z0-9]/g,'-')}">0</span>)
