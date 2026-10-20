@@ -22,7 +22,7 @@
 
          <div class="col-md-12">
             <div class="form-group">
-                <label>Province</label>
+                <label>State</label>
                 <select class="form-control" name="province_id" id="province">
                     <?php
                         foreach ($provinces as $prov) {
@@ -120,70 +120,48 @@
                 <label>Edit Police Classification (Country)</label><br>
 
                 <input type="hidden" name="icon" id="icon" value="{{ $police->icon }}">
-               <div class="form-check form-check-inline police-option {{ $police->category == 'Indonesian National Police (Polri) HQ' ? 'selected' : '' }}">
+               <div class="form-check form-check-inline police-option {{ $police->category == 'National Police HQ' ? 'selected' : '' }}">
                     <input class="form-check-input category-radio"
                         type="radio"
                         name="category"
-                        value="Indonesian National Police (Polri) HQ"
+                        value="National Police HQ"
                         data-icon="{{ asset('images/Layer1.png') }}"
-                        {{ $police->category == 'Indonesian National Police (Polri) HQ' ? 'checked' : '' }}>
+                        {{ $police->category == 'National Police HQ' ? 'checked' : '' }}>
                     <img src="{{ asset('images/Layer1.png') }}" width="16">
-                    <label>Indonesian National Police (Polri) HQ</label>
+                    <label>National Police HQ</label>
                 </div>
 
-                <div class="form-check form-check-inline police-option {{ $police->category == 'Provincial Police (Polda)' ? 'selected' : '' }}">
+                <div class="form-check form-check-inline police-option {{ $police->category == 'State Police' ? 'selected' : '' }}">
                     <input class="form-check-input category-radio"
                         type="radio"
                         name="category"
-                        value="Provincial Police (Polda)"
+                        value="State Police"
                         data-icon="{{ asset('images/Layer2.png') }}"
-                        {{ $police->category == 'Provincial Police (Polda)' ? 'checked' : '' }}>
+                        {{ $police->category == 'State Police' ? 'checked' : '' }}>
                     <img src="{{ asset('images/Layer2.png') }}" width="16">
-                    <label>Provincial Police (Polda)</label>
+                    <label>State Police</label>
                 </div>
 
-                <div class="form-check form-check-inline police-option {{ $police->category == 'Municipality Police (Polres)' ? 'selected' : '' }}">
+                <div class="form-check form-check-inline police-option {{ $police->category == 'Municipal Police' ? 'selected' : '' }}">
                     <input class="form-check-input category-radio"
                         type="radio"
                         name="category"
-                        value="Municipality Police (Polres)"
+                        value="Municipal Police"
                         data-icon="{{ asset('images/Layer3.png') }}"
-                        {{ $police->category == 'Municipality Police (Polres)' ? 'checked' : '' }}>
+                        {{ $police->category == 'Municipal Police' ? 'checked' : '' }}>
                     <img src="{{ asset('images/Layer3.png') }}" width="16">
-                    <label>Municipality Police (Polres)</label>
+                    <label>Municipal Police</label>
                 </div>
 
-                <div class="form-check form-check-inline police-option {{ $police->category == 'District Police (Polsek)' ? 'selected' : '' }}">
+                <div class="form-check form-check-inline police-option {{ $police->category == 'Specialized Unit' ? 'selected' : '' }}">
                     <input class="form-check-input category-radio"
                         type="radio"
                         name="category"
-                        value="District Police (Polsek)"
+                        value="Specialized Unit"
                         data-icon="{{ asset('images/Layer4.png') }}"
-                        {{ $police->category == 'District Police (Polsek)' ? 'checked' : '' }}>
+                        {{ $police->category == 'Specialized Unit' ? 'checked' : '' }}>
                     <img src="{{ asset('images/Layer4.png') }}" width="16">
-                    <label>District Police (Polsek)</label>
-                </div>
-
-                <div class="form-check form-check-inline police-option {{ $police->category == 'Police Mobile Brigade (Brimob)' || $police->category == 'Police Mobil Brigade (Brimob)' ? 'selected' : '' }}">
-                    <input class="form-check-input category-radio"
-                        type="radio"
-                        name="category"
-                        value="Police Mobile Brigade (Brimob)"
-                        data-icon="{{ asset('images/Brimob.png') }}"
-                        {{ $police->category == 'Police Mobile Brigade (Brimob)' || $police->category == 'Police Mobil Brigade (Brimob)' ? 'checked' : '' }}>
-                    <img src="{{ asset('images/Brimob.png') }}" width="16">
-                    <label>Police Mobile Brigade (Brimob)</label>
-                </div>
-
-                <div class="form-check form-check-inline police-option {{ $police->category == 'Police Bomb Squad (Gegana)' ? 'selected' : '' }}">
-                    <input class="form-check-input category-radio"
-                        type="radio"
-                        name="category"
-                        value="Police Bomb Squad (Gegana)"
-                        data-icon="{{ asset('images/Gegana.png') }}"
-                        {{ $police->category == 'Police Bomb Squad (Gegana)' ? 'checked' : '' }}>
-                    <img src="{{ asset('images/Gegana.png') }}" width="16">
-                    <label>Police Bomb Squad (Gegana)</label>
+                    <label>Specialized Unit</label>
                 </div>
 
             </div>

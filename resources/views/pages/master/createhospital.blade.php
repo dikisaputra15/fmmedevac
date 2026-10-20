@@ -22,7 +22,7 @@
 
          <div class="col-md-12">
             <div class="form-group">
-                <label>Province</label>
+                <label>State</label>
                 <select class="form-control" name="province_id" id="province">
                         <option value="0">-Choosse Provinces Region-</option>
                     @foreach($provinces as $prov)
@@ -34,9 +34,9 @@
 
         <div class="col-md-12">
             <div class="form-group">
-                <label for="city">City/Regency</label>
+                <label for="city">Municipality</label>
                 <select name="city" id="city" class="form-control">
-                    <option value="">-Choosse City/Regency-</option>
+                    <option value="">-Choosse Municipality-</option>
                 </select>
             </div>
         </div>
@@ -65,20 +65,11 @@
             <div class="form-group">
                 <label>Facility Level</label>
                 <select class="form-control" name="facility_level">
-                    <option value="Class A">
-                        Class A
+                    <option value="Hospital">
+                        Hospital
                     </option>
-                    <option value="Class B">
-                        Class B
-                    </option>
-                    <option value="Class C">
-                        Class C
-                    </option>
-                    <option value="Class D">
-                        Class D
-                    </option>
-                    <option value="Public Health Center (PUSKESMAS)">
-                        Public Health Center (PUSKESMAS)
+                    <option value="Clinic / Health Center">
+                        Clinic / Health Center
                     </option>
                 </select>
             </div>
@@ -113,11 +104,8 @@
         <div class="col-md-12">
             <div class="form-group">
                 <label>Icon</label><br>
-                <input type="radio" name="icon" value="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital-pin-red.png"><img src="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital-pin-red.png" style="width:24; height:24;"> Class A
-                <input type="radio" name="icon" value="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-blue.png"><img src="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-blue.png" style="width:24; height:24;"> Class B
-                <input type="radio" name="icon" value="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-purple.png"><img src="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-purple.png" style="width:24; height:24;"> Class C
-                <input type="radio" name="icon" value="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-green.png"><img src="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-green.png" style="width:24; height:24;"> Class D
-                <input type="radio" name="icon" value="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-tosca.png"><img src="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-tosca.png" style="width:24; height:24;"> Public Health Center (PUSKESMAS)
+                <input type="radio" name="icon" value="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital-pin-red.png"><img src="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital-pin-red.png" style="width:24; height:24;"> Hospital
+                <input type="radio" name="icon" value="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-blue.png"><img src="https://id.concordreview.com/wp-content/plugins/w2gm/resources/images/map_icons/icons/_new/hospital_pin-blue.png" style="width:24; height:24;"> Clinic / Health Center
             </div>
         </div>
 
@@ -907,7 +895,7 @@
                 type: 'GET',
                 success: function (data) {
                     $('#city').empty();
-                    $('#city').append('<option value="">-- Choosse City/Regency --</option>');
+                    $('#city').append('<option value="">-- Choosse Municipality --</option>');
                     $.each(data, function (key, city) {
                         $('#city').append('<option value="' + city.id + '">' + city.city + '</option>');
                     });
@@ -915,7 +903,7 @@
             });
         } else {
             $('#city').empty();
-            $('#city').append('<option value="">-- Choosse City/Regency  --</option>');
+            $('#city').append('<option value="">-- Choosse Municipality  --</option>');
         }
     });
 </script>

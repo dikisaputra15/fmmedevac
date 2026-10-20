@@ -1,5 +1,5 @@
 //! moment.js locale configuration
-//! locale : Tagalog (Indonesia) [tl-ph]
+//! locale : Tagalog (Federated States of Micronesia) [tl-ph]
 //! author : Dan Hagman : https://github.com/hagmandan
 
 ;(function (global, factory) {

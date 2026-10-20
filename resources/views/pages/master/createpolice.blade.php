@@ -21,9 +21,9 @@
 
          <div class="col-md-12">
             <div class="form-group">
-                <label>Province</label>
+                <label>State</label>
                 <select class="form-control" name="province_id" id="province">
-                        <option value="0">-Choosse Province-</option>
+                        <option value="0">-Choosse State-</option>
                     @foreach($provinces as $prov)
                         <option value="{{$prov->id}}">{{$prov->provinces_region}}</option>
                     @endforeach
@@ -93,40 +93,29 @@
 
                 <input type="hidden" name="icon" id="icon">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input category-radio" type="radio" name="category" value="Indonesian National Police (Polri) HQ" data-icon="{{ asset('images/Layer1.png') }}">
+                    <input class="form-check-input category-radio" type="radio" name="category" value="Federated States of Micronesian National Police (Polri) HQ" data-icon="{{ asset('images/Layer1.png') }}">
                     <img src="{{ asset('images/Layer1.png') }}" style="width:12px; height:12px;">
-                    <label class="form-check-label">Indonesian National Police (Polri) HQ</label>
+                    <label class="form-check-label">National Police HQ</label>
                 </div>
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input category-radio" type="radio" name="category" value="Provincial Police (Polda)" data-icon="{{ asset('images/Layer2.png') }}">
+                    <input class="form-check-input category-radio" type="radio" name="category" value="State Police" data-icon="{{ asset('images/Layer2.png') }}">
                     <img src="{{ asset('images/Layer2.png') }}" style="width:12px; height:12px;">
-                    <label class="form-check-label">Provincial Police (Polda)</label>
+                    <label class="form-check-label">State Police</label>
                 </div>
 
                 <div class="form-check form-check-inline">
                     <input class="form-check-input category-radio" type="radio" name="category" value="Municipality Police (Polres)" data-icon="{{ asset('images/Layer3.png') }}">
                     <img src="{{ asset('images/Layer3.png') }}" style="width:12px; height:12px;">
-                    <label class="form-check-label">Municipality Police (Polres)</label>
+                    <label class="form-check-label">Municipal Police</label>
                 </div>
 
                 <div class="form-check form-check-inline">
                     <input class="form-check-input category-radio" type="radio" name="category" value="District Police (Polsek)" data-icon="{{ asset('images/Layer4.png') }}">
                     <img src="{{ asset('images/Layer4.png') }}" style="width:12px; height:12px;">
-                    <label class="form-check-label">District Police (Polsek)</label>
+                    <label class="form-check-label">Specialized Unit</label>
                 </div>
 
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input category-radio" type="radio" name="category" value="Police Mobile Brigade (Brimob)" data-icon="{{ asset('images/Brimob.png') }}">
-                    <img src="{{ asset('images/Brimob.png') }}" style="width:12px; height:12px;">
-                    <label class="form-check-label">Police Mobile Brigade (Brimob)</label>
-                </div>
-
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input category-radio" type="radio" name="category" value="Police Bomb Squad (Gegana)" data-icon="{{ asset('images/Gegana.png') }}">
-                    <img src="{{ asset('images/Gegana.png') }}" style="width:12px; height:12px;">
-                    <label class="form-check-label">Police Bomb Squad (Gegana)</label>
-                </div>
             </div>
         </div>
 

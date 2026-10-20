@@ -158,12 +158,10 @@ class PoliceController extends Controller
         // Execute the query and return JSON response
         $polices = $query->get();
         $categoryCounts = [
-            'Indonesian National Police (Polri) HQ' => 0,
-            'Provincial Police (Polda)' => 0,
-            'Municipality Police (Polres)' => 0,
-            'District Police (Polsek)' => 0,
-            'Police Mobile Brigade (Brimob)' => 0,
-            'Police Bomb Squad (Gegana)' => 0,
+            'National Police HQ' => 0,
+            'State Police' => 0,
+            'Municipal Police' => 0,
+            'Specialized Unit' => 0,
         ];
 
         foreach ($polices as $police) {
