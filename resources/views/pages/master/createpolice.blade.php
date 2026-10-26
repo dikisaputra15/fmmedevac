@@ -93,7 +93,7 @@
 
                 <input type="hidden" name="icon" id="icon">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input category-radio" type="radio" name="category" value="Federated States of Micronesian National Police (Polri) HQ" data-icon="{{ asset('images/Layer1.png') }}">
+                    <input class="form-check-input category-radio" type="radio" name="category" value="National Police HQ" data-icon="{{ asset('images/Layer1.png') }}">
                     <img src="{{ asset('images/Layer1.png') }}" style="width:12px; height:12px;">
                     <label class="form-check-label">National Police HQ</label>
                 </div>
@@ -105,13 +105,13 @@
                 </div>
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input category-radio" type="radio" name="category" value="Municipality Police (Polres)" data-icon="{{ asset('images/Layer3.png') }}">
+                    <input class="form-check-input category-radio" type="radio" name="category" value="Municipal Police" data-icon="{{ asset('images/Layer3.png') }}">
                     <img src="{{ asset('images/Layer3.png') }}" style="width:12px; height:12px;">
                     <label class="form-check-label">Municipal Police</label>
                 </div>
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input category-radio" type="radio" name="category" value="District Police (Polsek)" data-icon="{{ asset('images/Layer4.png') }}">
+                    <input class="form-check-input category-radio" type="radio" name="category" value="Specialized Unit" data-icon="{{ asset('images/Layer4.png') }}">
                     <img src="{{ asset('images/Layer4.png') }}" style="width:12px; height:12px;">
                     <label class="form-check-label">Specialized Unit</label>
                 </div>

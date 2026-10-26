@@ -388,18 +388,6 @@
                 <div class="classification" style="flex-direction: column; width:100%;">
                       <div class="class-header class-medical-classification">Medical Facility Classification</div>
                       <div class="classification">
-                        <!-- Advanced -->
-                        <div class="class-column">
-                          <div class="class-header class-advanced">Advanced</div>
-                          <div class="hospital-list">
-                            <div class="hospital-item">
-                              <button class="btn p-1" data-bs-toggle="modal" data-bs-target="#level66Modal">
-                                <img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital-pin-red.png" style="width:24px; height:24px;">
-                                <small>Class A</small>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
 
                         <!-- Intermediate -->
                         <div class="class-column">
@@ -409,13 +397,7 @@
                               <div class="hospital-item">
                                 <button class="btn p-1" data-bs-toggle="modal" data-bs-target="#level55Modal">
                                   <img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-blue.png" style="width:24px; height:24px;">
-                                  <small>Class B</small>
-                                </button>
-                              </div>
-                              <div class="hospital-item">
-                                <button class="btn p-1" data-bs-toggle="modal" data-bs-target="#level44Modal">
-                                  <img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-purple.png" style="width:24px; height:24px;">
-                                  <small>Class C</small>
+                                  <small>Hospital</small>
                                 </button>
                               </div>
                             </div>
@@ -430,13 +412,7 @@
                               <div class="hospital-item">
                                 <button class="btn p-1" data-bs-toggle="modal" data-bs-target="#level33Modal">
                                   <img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-green.png" style="width:24px; height:24px;">
-                                  <small>Class D</small>
-                                </button>
-                              </div>
-                              <div class="hospital-item">
-                                <button class="btn p-1" data-bs-toggle="modal" data-bs-target="#level11Modal">
-                                    <img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-tosca.png" style="width:24px; height:24px;">
-                                    <small>PUSKESMAS</small>
+                                  <small>Clinic / Health Centre</small>
                                 </button>
                               </div>
                             </div>
@@ -597,90 +573,38 @@
       <div class="modal-header">
          <div class="d-flex align-items-center">
             <img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-green.png" style="width:30px; height:30px;">
-            <h5 class="modal-title" id="disclaimerLabel">Class D — Sub-district Hospital</h5>
+            <h5 class="modal-title" id="disclaimerLabel">Clinic / Health Centre</h5>
         </div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p class="p-modal text-justify">
-            A Class D Hospital (Rumah Sakit Kelas D), regulated by the Ministry of Health of the Republic of Federated States of Micronesia (Kementerian Kesehatan Republik Federated States of Micronesia), commonly referred to in English as the Federated States of Micronesian Ministry of Health (MOH). Class D hospitals provide basic inpatient, outpatient, and emergency services with general practitioners and limited specialist support, including basic medical and surgical capability.
-        </p>
-        <p class="p-modal text-justify">
-            Class D hospitals operate mainly at the sub-district level, it serves as an entry-level facility within the referral system, managing uncomplicated cases, stabilizing emergency patients, and referring more complex conditions to higher-level hospitals. This classification applies to both public and private institutions that meet the established minimum infrastructure, staffing, and service standards.
-        </p>
-        <p class="p-modal text-justify">
-            Public Class D hospitals commonly contract with BPJS. Private Class D hospitals may choose whether to participate. In the referral system, they receive patients from Puskesmas or other first-level facilities if contracted.
-        </p>
-        <p class="p-modal text-justify">
-            Only hospitals that have formal cooperation agreements with BPJS Kesehatan can receive BPJS-referred patients.
-        </p>
-        <p class="p-modal text-justify">
-            <b>Note:</b> BPJS (Badan Penyelenggara Jaminan Sosial), Social Security Administering Body. In Federated States of Micronesia, BPJS refers to the public agencies that administer the national social security system under the National Social Security System (SJSN). There are two main bodies:
-            <ul>
-                <li>BPJS Kesehatan – Administers national health insurance (JKN).</li>
-                <li>BPJS Ketenagakerjaan – Administers employment-related social security (work injury, old-age savings, pension, death benefits).</li>
-            </ul>
-            <a href="{{ asset('files/moh-regulation-no3-2020.pdf') }}" target="_blank">Federated States of Micronesia Ministry of Health (MOH) regulation (Permenkes No. 3 Tahun 2020)</a>
-        </p>
-        <p class="p-modal text-justify">
-            <p><strong>Bed Capacity</strong></p>
-            Minimum 50 inpatient beds (Most Class D hospitals operate between 50–100 beds)
-        </p>
-        <p class="p-modal text-justify">
-            <p><strong>Clinical Services</strong></p>
-             <ul>
-                <li>
-                    <strong>Core Medical Services</strong>
-                    <ul>
-                        <li>At least 2 basic specialist services (typically Internal Medicine and Surgery, or adjusted based on regional need)</li>
-                        <li>General practitioner-led services</li>
-                        <li>Basic maternal and child health services</li>
-                    </ul>
-                </li>
-                <li class="mt-2">
-                    <strong>Emergency & Critical Care</strong>
-                    <ul>
-                        <li>24/7 Emergency Unit (basic capability)</li>
-                        <li>Initial stabilization of trauma and acute cases</li>
-                        <li>Referral coordination to Class C/B hospitals</li>
-                    </ul>
-                </li>
-                <li class="mt-2">
-                    <strong>Diagnostic Services</strong>
-                    <ul>
-                        <li>Basic laboratory</li>
-                        <li>Basic radiology / X-ray (limited)</li>
-                        <li>Standard ultrasound (if available)</li>
-                    </ul>
-                </li>
-                <li class="mt-2">
-                    <strong>Surgical & Therapeutic Facilities</strong>
-                    <ul>
-                        <li>Minor surgical procedures</li>
-                        <li>Basic obstetric procedures</li>
-                        <li>Wound care and emergency interventions</li>
-                    </ul>
-                </li>
-                <li class="mt-2">
-                    <strong>Supporting Medical Infrastructure</strong>
-                    <ul>
-                        <li>Pharmacy</li>
-                        <li>Basic sterilization services</li>
-                        <li>Medical records system</li>
-                    </ul>
-                </li>
-            </ul>
-        </p>
-        <p class="p-modal text-justify">
-            <strong>Class D Hospital Role</strong>
-            <ul>
-                <li>First-level hospital within the referral system</li>
-                <li>Bridging facility between primary care (Puskesmas/clinics) and higher-level hospitals</li>
-                <li>Basic inpatient and emergency care provider</li>
-                <li>Stabilization and referral coordination center</li>
-                <li>Healthcare access expansion tool in remote or newly developed areas</li>
-            </ul>
-        </P>
+        <section data-info-section="overview">
+          <p class="p-modal text-justify">
+            Below the State Hospital, primary care is delivered through dispensaries and community health centers. Dispensaries are small public health posts, mostly on outer islands and in remote municipalities. They are staffed by health assistants or medical extension officers (&ldquo;medex&rdquo;) and provide basic primary care, first aid, referral, and public-health and sanitation services. A 2005 national assessment counted 117 dispensaries nationwide and estimated that they serve more than 30% of the population, in remote islands. Dispensaries are funded through the state health departments. Municipal governments often provide land and building funds, and some outer-island dispensaries receive no direct funding. Community health centers on the main islands provide outpatient primary care, and national statistics report them alongside dispensaries, public health offices, mobile clinics and aid posts.
+          </p>
+          <p class="p-modal text-justify">
+            <strong>Note:</strong> The FSM Code mentions &ldquo;dispensaries&rdquo; and &ldquo;clinics&rdquo; only as types of government-owned facility (Title 41, Section 101). It does not define a dispensary, a community health center or an aid post, and it sets no staffing or equipment standard for any of them. The labels also vary between states and over time. For desk research, search &ldquo;dispensary,&rdquo; &ldquo;community health center,&rdquo; &ldquo;health center,&rdquo; &ldquo;aid post&rdquo; and &ldquo;clinic&rdquo; as possible names for the same primary-care tier, and record the term the source actually uses. The figure of 117 dispensaries is from 2005; current counts should be confirmed with each state Department of Health Services. In 2026 DHSA and the Micronesia Red Cross Society launched a project to rehabilitate dispensaries on five Pohnpei outer islands.
+          </p>
+        </section>
+        <section data-info-section="role">
+          <ul>
+            <li>Serve as the first point of contact for basic health care, especially on outer islands with no other health facility</li>
+            <li>Deliver preventive, maternal and child health and public-health services, supported by outreach teams from the State Hospital</li>
+            <li>Refer patients to the State Hospital when a case is beyond the health assistant&rsquo;s skills, typically by radio consultation followed by evacuation by ship, boat or occasional flight.</li>
+          </ul>
+        </section>
+        <section data-info-section="services">
+          <p><strong>Typical Bed Capacity</strong></p>
+          <ul>
+            <li>No inpatient beds reported. Dispensaries are outpatient health posts, often staffed by a single health assistant.</li>
+          </ul>
+          <p><strong>Diagnostic &amp; Support Infrastructure</strong></p>
+          <ul>
+            <li>Basic examination space and essential medicines; limited or no laboratory capability</li>
+            <li>Communication with State Hospital physicians mainly by radio, though many outer islands lack reliable communication</li>
+          </ul>
+          <p class="p-modal text-justify"><em><strong>Note:</strong> Legal basis: FSM Code Title 41, Section 101. Dispensary counts, staffing and referral practice come from the DHSA Comprehensive Assessment of Primary Care Systems (2005); facility categories come from the FSM Health Digest 2025. These details are not confirmed against the Code itself.</em></p>
+        </section>
       </div>
     </div>
   </div>
@@ -791,99 +715,43 @@
       <div class="modal-header">
         <div class="d-flex align-items-center">
             <img src="https://pg.concordreview.com/wp-content/uploads/2025/01/hospital_pin-blue.png" style="width:30px; height:30px;">
-            <h5 class="modal-title" id="disclaimerLabel">Class B — Provincial Referral Hospital</h5>
+            <h5 class="modal-title" id="disclaimerLabel">Hospital</h5>
         </div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p class="p-modal text-justify">
-            Secondary–tertiary level referral hospital regulated by the Ministry of Health of the Republic of Federated States of Micronesia (Kementerian Kesehatan Republik Federated States of Micronesia), commonly referred to in English as the Federated States of Micronesian Ministry of Health (MOH). Class B hospitals provide comprehensive specialist medical services and selected subspecialist services, supported by advanced diagnostic and therapeutic facilities.
-        </p>
-        <p class="p-modal text-justify">
-           Class B hospitals function as provincial or inter-district referral centers, managing moderate to complex medical and surgical cases referred from lower-level hospitals (Class C and D), while referring highly complex subspecialty cases to Class A hospitals. This classification applies equally to public and private hospitals that meet the required standards of infrastructure, human resources, equipment, and service capability.
-        </p>
-        <p class="p-modal text-justify">
-           Public Class B hospitals typically contract with BPJS. Private Class B hospitals may selectively contract or operate fully private services. BPJS patients are accepted only in contracted facilities and generally arrive through referrals from Class C or D hospitals.
-        </p>
-        <p class="p-modal text-justify">
-           Only hospitals that have formal cooperation agreements with BPJS Kesehatan can receive BPJS-referred patients.
-        </p>
-        <p class="p-modal text-justify">
-           <b>Note:</b> BPJS (Badan Penyelenggara Jaminan Sosial), Social Security Administering Body. In Federated States of Micronesia, BPJS refers to the public agencies that administer the national social security system under the National Social Security System (SJSN). There are two main bodies:
-            <ul>
-                <li>BPJS Kesehatan – Administers national health insurance (JKN).</li>
-                <li>BPJS Ketenagakerjaan – Administers employment-related social security (work injury, old-age savings, pension, death benefits).</li>
-            </ul>
-            <a href="{{ asset('files/moh-regulation-no3-2020.pdf') }}" target="_blank">Federated States of Micronesia Ministry of Health (MOH) regulation (Permenkes No. 3 Tahun 2020)</a>
-        </p>
-        <p class="p-modal text-justify">
-            <p><strong>Bed Capacity</strong></p>
-            Minimum 200 inpatient beds. Most Class B hospitals operate between 200–400+ beds, depending on regional demand and provincial role.
-        </p>
-        <p class="p-modal text-justify">
-            <p><strong>Clinical Services</strong></p>
-             <ul>
-                <li>
-                    <strong>Core Medical Services</strong>
-                    <ul>
-                        <li>4 basic specialists: Internal Medicine, Surgery, Pediatrics, Obstetrics & Gynecology</li>
-                        <li>Additional major specialties (e.g., Anesthesiology, Radiology, Pathology, Neurology, Psychiatry, Dermatology, ENT, Ophthalmology)</li>
-                        <li>Selected subspecialty services (e.g., cardiology, orthopedics, urology, pulmonology — depending on hospital capability)</li>
-                    </ul>
-                </li>
-                <li class="mt-2">
-                    <strong>Emergency & Critical Care</strong>
-                    <ul>
-                        <li>24/7 Emergency Department (IGD)</li>
-                        <li>ICU</li>
-                        <li>NICU and/or PICU (depending on capacity)</li>
-                        <li>HCU (High Care Unit)</li>
-                        <li>Trauma stabilization capability</li>
-                    </ul>
-                </li>
-                <li class="mt-2">
-                    <strong>Diagnostic Services</strong>
-                    <ul>
-                        <li>CT Scan (standard in most Class B hospitals)</li>
-                        <li>Advanced ultrasound</li>
-                        <li>Comprehensive laboratory services</li>
-                        <li>Blood bank/transfusion unit</li>
-                        <li>Endoscopy services</li>
-                        <li>Basic interventional procedures</li>
-                    </ul>
-                </li>
-                <li class="mt-2">
-                    <strong>Surgical & Therapeutic Facilities</strong>
-                    <ul>
-                        <li>Multiple operating theatres</li>
-                        <li>Major general surgery capability</li>
-                        <li>Orthopedic and obstetric surgery capability</li>
-                        <li>Dialysis unit (in most provincial hospitals)</li>
-                        <li>Chemotherapy (in hospitals with oncology service)</li>
-                    </ul>
-                </li>
-                <li class="mt-2">
-                    <strong>Supporting Medical Infrastructure</strong>
-                    <ul>
-                        <li>24-hour pharmacy</li>
-                        <li>Central Sterile Supply Department (CSSD)</li>
-                        <li>Medical rehabilitation service</li>
-                        <li>Nutrition & dietetics service</li>
-                        <li>Medical records system</li>
-                    </ul>
-                </li>
-            </ul>
-        </p>
-        <p class="p-modal text-justify">
-            <strong>Class B Hospital Role</strong>
-            <ul>
-                <li>Provincial-level referral hospital</li>
-                <li>Secondary escalation point in the BPJS referral system (from Class C/D)</li>
-                <li>Regional center for specialist services</li>
-                <li>Stabilization and management center for moderate to complex cases</li>
-                <li>Supporting teaching hospital (in many provinces)</li>
-            </ul>
-        </P>
+        <section data-info-section="overview">
+          <p class="p-modal text-justify">
+            Each of the four states has one public State Hospital, which is the top of that state&rsquo;s health system: Yap State Hospital (Colonia, Yap), Chuuk State Hospital (Weno, Chuuk), Pohnpei State Hospital (Kolonia, Pohnpei) and Kosrae State Hospital (Tofol, Lelu Municipality, Kosrae). Each is owned and run by its state government, not the national government. Each provides outpatient, inpatient, dental and public-health services and acts as the referral point for the dispensaries and community health centers in its state. FSM has no national hospital and no tertiary hospital.
+          </p>
+          <p class="p-modal text-justify">
+            <strong>Note:</strong> Because health delivery is a state function, each State Hospital is governed mainly by its own state&rsquo;s laws and budget, and those state codes were not reviewed for this document. The national Code only covers the hospitals indirectly: Title 41, Section 101 (supervision of government-owned facilities), Title 41, Section 102 (health regulations covering hospitals) and the Certificate of Need Act (Title 41, Chapter 3). Classify each as &ldquo;State Hospital &mdash; public (state-operated).&rdquo; Do not record any State Hospital as a national or tertiary facility. A 2005 national assessment found that hemodialysis was the only tertiary-type service in the country, available only at Pohnpei State Hospital; this is dated and should be re-checked.
+          </p>
+        </section>
+        <section data-info-section="role">
+          <ul>
+            <li>Serve as the single public hospital and main referral point for all dispensaries and community health centers in the state</li>
+            <li>Provide primary and secondary care, both preventive and curative: outpatient, inpatient (medical, surgical, obstetric and pediatric wards), dental and public-health services</li>
+            <li>Act as the gateway for off-island referral, mainly to Guam, Manila and Honolulu, under each state&rsquo;s referral criteria and funding.</li>
+          </ul>
+        </section>
+        <section data-info-section="services">
+          <p><strong>Core Capability Areas</strong></p>
+          <ul>
+            <li>General medicine, general surgery, obstetrics and pediatrics, which are the four inpatient wards reported in national health statistics</li>
+            <li>A Primary Health Care Unit based at the hospital, which sends public-health outreach teams to outer areas for immunization, family planning, infectious disease screening and maternal and child health</li>
+          </ul>
+          <p><strong>Diagnostic &amp; Support Infrastructure</strong></p>
+          <ul>
+            <li>Outpatient, inpatient, public-health, dental and administrative units at each State Hospital (2005 assessment); diagnostic capability varies between states and was not confirmed for this document</li>
+            <li>Any new facility, change in bed capacity of 10 beds or 10% (whichever is less), capital expenditure over $50,000, or acquisition of major medical equipment over $50,000 requires a certificate of need under Title 41, Section 305</li>
+          </ul>
+          <p><strong>Typical Bed Capacity</strong></p>
+          <ul>
+            <li>Not published in the official national sources reviewed. Inpatient activity in 2025 varied widely by state: Pohnpei 4,664, Chuuk 732, Yap 588 and Kosrae 338 inpatient encounters (FSM Health Digest 2025). These are encounter counts, not bed counts.</li>
+          </ul>
+          <p class="p-modal text-justify"><em><strong>Note:</strong> Legal basis: FSM Constitution, Article XIII, Section 1; FSM Code Title 41, Sections 101&ndash;102 and Chapter 3. Facility names and locations come from the DHSA primary care assessment (2005) and the US Embassy Kolonia medical assistance list (2018); inpatient figures come from the FSM Health Digest 2025. None of these details are stated in the Code itself.</em></p>
+        </section>
       </div>
     </div>
   </div>
@@ -1028,6 +896,12 @@ document.addEventListener('DOMContentLoaded', function () {
         let currentSection = 'overview';
 
         Array.from(body.childNodes).forEach(function (node) {
+            const explicitSection = node.dataset?.infoSection;
+            if (explicitSection && sections[explicitSection]) {
+                sections[explicitSection].appendChild(node);
+                return;
+            }
+
             const heading = (node.textContent || '').trim().replace(/\s+/g, ' ');
             if (/^Bed Capacity\b/i.test(heading)) currentSection = 'services';
             else if (/^Clinical Services\b/i.test(heading)) currentSection = 'services';

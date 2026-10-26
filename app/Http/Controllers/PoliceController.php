@@ -14,6 +14,13 @@ use Exception;
 
 class PoliceController extends Controller
 {
+    private const CATEGORY_ALIASES = [
+        'National Police HQ' => ['National Police HQ', 'Federated States of Micronesian National Police (Polri) HQ'],
+        'State Police' => ['State Police'],
+        'Municipal Police' => ['Municipal Police', 'Municipality Police (Polres)'],
+        'Specialized Unit' => ['Specialized Unit', 'District Police (Polsek)'],
+    ];
+
      public function index(Request $request)
     {
         // Using `unique()` and `values()` on collections ensures distinct, sorted results.
@@ -54,7 +61,11 @@ class PoliceController extends Controller
             $q->where(function ($sub) use ($categories) {
 
                 foreach ($categories as $category) {
-                    if ($category === 'Police Mobile Brigade (Brimob)') {
+                    if (isset(self::CATEGORY_ALIASES[$category])) {
+                        foreach (self::CATEGORY_ALIASES[$category] as $alias) {
+                            $sub->orWhere('category', 'LIKE', "%{$alias}%");
+                        }
+                    } elseif ($category === 'Police Mobile Brigade (Brimob)') {
                         $sub->orWhere('category', 'LIKE', "%Police Mobil Brigade (Brimob)%")
                             ->orWhere('category', 'LIKE', "%Police Mobile Brigade (Brimob)%");
                     } else {
@@ -172,13 +183,14 @@ class PoliceController extends Controller
 
             $cats = array_map('trim', explode(',', $police->category));
 
-            foreach ($cats as $cat) {
-                if ($cat === 'Police Mobil Brigade (Brimob)') {
-                    $cat = 'Police Mobile Brigade (Brimob)';
-                }
-
-                if (isset($categoryCounts[$cat])) {
-                    $categoryCounts[$cat]++;
+            foreach (self::CATEGORY_ALIASES as $label => $aliases) {
+                foreach ($cats as $cat) {
+                    foreach ($aliases as $alias) {
+                        if (strcasecmp($cat, $alias) === 0) {
+                            $categoryCounts[$label]++;
+                            continue 3;
+                        }
+                    }
                 }
             }
         }
